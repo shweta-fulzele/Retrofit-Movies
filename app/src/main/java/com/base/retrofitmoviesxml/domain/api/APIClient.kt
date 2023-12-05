@@ -12,43 +12,49 @@ import java.util.concurrent.TimeUnit
 class APIClient {
     private lateinit var retrofit: Retrofit
 
-//    Interceptor to pass API Key in the url
-    private val requestInterceptor = Interceptor{chain ->
+    // Interceptor to pass API Key in the URL
+    private val requestInterceptor = Interceptor { chain ->
+        // Get the original URL from the request
+        val url = chain.request()
+            .url
+            .newBuilder()
+            // Add the API key as a query parameter
+            .addQueryParameter("api_key", API_KEY)
+            .build()
 
-    val url = chain.request()
-        .url
-        .newBuilder()
-        .addQueryParameter("api_key", API_KEY)
-        .build()
+        // Build a new request with the modified URL
+        val request = chain.request()
+            .newBuilder()
+            .url(url)
+            .build()
 
-    val request = chain.request()
-        .newBuilder()
-        .url(url)
-        .build()
-
-    return@Interceptor chain.proceed(request)
-
-
+        // Proceed with the modified request
+        return@Interceptor chain.proceed(request)
     }
 
-//    Add interceptor to OkHttpClient
-    private fun createOkHttpClient() : OkHttpClient {
+    // Add interceptor to OkHttpClient
+    private fun createOkHttpClient(): OkHttpClient {
+        // Create an OkHttpClient with a timeout, and add the requestInterceptor
         return OkHttpClient.Builder()
             .addInterceptor(requestInterceptor)
             .connectTimeout(60, TimeUnit.SECONDS)
+            .readTimeout(15, TimeUnit.SECONDS)
             .build()
     }
 
-    fun createRetrofitInstance(): Retrofit{
+    // Create Retrofit instance
+    fun createRetrofitInstance(): Retrofit {
+        // Create an OkHttpClient with the configured interceptors
         val okHttpClient = createOkHttpClient()
 
+        // Build a Retrofit instance with the base URL, OkHttpClient, and Gson converter factory
         retrofit = Retrofit.Builder()
             .baseUrl(BASE_URL)
             .client(okHttpClient)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
+        // Return the configured Retrofit instance
         return retrofit
     }
-
 }
