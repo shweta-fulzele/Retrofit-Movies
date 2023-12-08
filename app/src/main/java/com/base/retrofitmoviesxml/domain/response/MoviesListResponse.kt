@@ -1,4 +1,4 @@
-package com.base.retrofitmoviesxml.domain.response
+package com.base.movieapplication.domain.response
 
 
 import com.google.gson.annotations.SerializedName
