@@ -1,4 +1,4 @@
-![Movie Details](https://github.com/shweta-fulzele/Retrofit-Movies/assets/46936228/3cc29d4b-de35-43da-acf7-44ee2536644a)# Retrofit-Movies 🎬
+# Retrofit-Movies 🎬
 
 **Simple Movies Android App**
 
@@ -8,11 +8,12 @@ A straightforward Movies Android application built with Kotlin, XML layouts, Ret
 
 **Movie List**
 
-![Movie List](https://github.com/shweta-fulzele/Retrofit-Movies/assets/46936228/6b44f82e-dbf6-4a0d-9806-460dbea10ba2)
+<img src="https://github.com/shweta-fulzele/Retrofit-Movies/assets/46936228/6b44f82e-dbf6-4a0d-9806-460dbea10ba2" width="250"/>
 
 **Movie Details**
 
-![Movie Details](https://github.com/shweta-fulzele/Retrofit-Movies/assets/46936228/0b69f533-05d7-4ac3-a39e-4a83905ff6d9)
+<img src="https://github.com/shweta-fulzele/Retrofit-Movies/assets/46936228/0b69f533-05d7-4ac3-a39e-4a83905ff6d9" width="250"/>
+
 
 
 ## Features 🌟
