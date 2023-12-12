@@ -6,14 +6,10 @@ A straightforward Movies Android application built with Kotlin, XML layouts, Ret
 
 ## Screenshots 💻
 
-**Movie List**
-
-<img src="https://github.com/shweta-fulzele/Retrofit-Movies/assets/46936228/6b44f82e-dbf6-4a0d-9806-460dbea10ba2" width="250"/>
-
-**Movie Details**
-
-<img src="https://github.com/shweta-fulzele/Retrofit-Movies/assets/46936228/0b69f533-05d7-4ac3-a39e-4a83905ff6d9" width="250"/>
-
+<p align="center">
+<img src="https://github.com/shweta-fulzele/Retrofit-Movies/assets/46936228/6b44f82e-dbf6-4a0d-9806-460dbea10ba2" hspace="20" width="300" alt = "Movie List" />
+<img src="https://github.com/shweta-fulzele/Retrofit-Movies/assets/46936228/0b69f533-05d7-4ac3-a39e-4a83905ff6d9" hspace="20" width="300" alt = "Movie Detail" />
+</p>
 
 
 ## Features 🌟
