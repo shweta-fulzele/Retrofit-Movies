@@ -1,6 +1,6 @@
-# Retrofit-Movies 🎬
+ # 🎬 Retrofit-Movies 🎬
 
-**Simple Movies Android App**
+# 🚀 Simple Movies Android App 🚀 
 
 A straightforward Movies Android application built with Kotlin, XML layouts, Retrofit for network requests, RecyclerView for efficient data display, and MVVM architecture for clean and modular code.
 
